@@ -3,7 +3,6 @@ package bakjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.Buffer;
 
 public class Q1012{
     // 배추밭 가로 길이(x)
