@@ -36,42 +36,24 @@ public class B09_gugudan {
 			}System.out.println();
 		}
 // -------------------------------------------------------------------------------------------------내가한거		
-//		
-////		1. 구구단을 다음과 같이 가로로 출력해 보세요.
-//		for(int i=2; i<=9; i++) {
-//			System.out.print(i+"단 : ");
-//			for(int j=1; j<=9; j++) {
-//				System.out.printf("%dx%d = %d \t",i,j,i*j);
-//			} System.out.println();
-//		}
-//		System.out.println();
-//		
-//		
-//		
-////		2. 구구단을 다음과 같이 세로로 출력해보세요.
-////		for(int i = 2 ; i <= 9 ; i++) {
-////			System.out.printf("%d단\t\t",i);
-////		}
-////		
-////		for (int i = 1; i <= 9; i++) {
-////			for (int j = 2; j <= 9; j++) {
-////				System.out.printf("%d x %d = %d \t", j, i, i * j);
-////				if(j==9) {
-////					System.out.println();
-////				}
-////			} 
-////		}
-//		for(int i=0; i<=9; i++) {
-//			for(int j=2; j<=9; j++) {
-//				if(i==0) {
-//					System.out.printf("%d단\t\t",j);
-//				} else {
-//					System.out.printf("%d x %d = %d \t", j, i, i * j);
-//				}
-//				
-////				System.out.printf("%dx%d = %d \n",i,j,i*j);
-//			} System.out.println();
-//		}
+		for(int line = 2;  line < 10; line++){
+			System.out.print(line + "단 : ");
+			for(int mul = 1; mul < 10; mul++){
+				System.out.printf("%d x %d = %2d\t",line, mul, line*mul);
+			}
+			System.out.println();
+		}
+
+		for(int dan = 2; dan < 10 ; dan++){
+			System.out.printf("%d단\t\t",dan);
+		}
+		System.out.println();
+		for(int step = 1; step < 10 ; step++){
+			for(int dan = 2; dan < 10 ; dan++){
+				System.out.printf("%d x %d = %2d\t",dan,step,dan*step);
+			}
+			System.out.println();
+		}
 
 	}
 
